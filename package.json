@@ -1,0 +1,30 @@
+{
+  "name": "fallback-map",
+  "version": "0.0.0",
+  "description": "Map with lookup fallback function",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test",
+    "preversion": "npm test",
+    "postversion": "npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hyeonupark/fallback-map.git"
+  },
+  "keywords": [
+    "map",
+    "fallback"
+  ],
+  "author": "HyeonuPark",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hyeonupark/fallback-map/issues"
+  },
+  "homepage": "https://github.com/hyeonupark/fallback-map#readme",
+  "devDependencies": {
+    "babel-polyfill": "^6.7.4",
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
+}
