@@ -1,6 +1,6 @@
 {
   "name": "fallback-map",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Map with lookup fallback function",
   "main": "index.js",
   "scripts": {
