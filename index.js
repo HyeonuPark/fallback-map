@@ -1,3 +1,5 @@
+var undefined
+
 exports.FallbackMap = function FallbackMap (fallback) {
   var map = new Map()
   var mapGet = map.get
@@ -10,10 +12,15 @@ exports.FallbackMap = function FallbackMap (fallback) {
   }
 
   map.get = function get (key) {
-    if (map.has(key)) {
-      return mapGet.call(map, key)
+    var result = mapGet.call(map, key)
+    if (result !== undefined) {
+      return result
     }
-    var result = fallback(key, map)
+    if (map.has(key)) {
+      return result
+    }
+
+    result = fallback(key, map)
     map.set(key, result)
     return result
   }
