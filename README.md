@@ -1,6 +1,8 @@
 fallback-map
 =============
 
+[![Build Status](https://travis-ci.org/HyeonuPark/fallback-map.svg?branch=master)](https://travis-ci.org/HyeonuPark/fallback-map)
+
 ES6 `Map` with lookup fallback function.
 
 # Usage
